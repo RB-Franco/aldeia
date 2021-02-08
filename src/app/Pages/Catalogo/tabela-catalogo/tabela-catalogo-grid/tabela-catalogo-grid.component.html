@@ -1,0 +1,120 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="main-card mb-4 card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-auto mr-auto">
+            <h5 class="card-title">Filtros</h5>
+          </div>
+          <div class="col-auto">
+            <button class="btn-icon btn-icon-only btn btn-link" (click)="ChangeIcon(troca)">
+              <i [class]="icone"> </i>
+            </button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-card mb-3 card">
+  <div class="card-header">
+    <div class="card-header-title font-size-lg text-capitalize font-weight-normal">Empresas</div>
+  </div>
+  <div class="table-hover">
+    <perfect-scrollbar style="overflow: auto; position: relative;">
+      <table class="align-middle text-truncate mb-0 table table-borderless table-hover">
+        <thead>
+          <tr>
+            <th class="text-center">Cod. tabela</th>            
+            <th class="text-center">Tabela</th>            
+            <th class="text-center">Codigo</th>            
+            <th class="text-center">Referência</th>
+            <th class="text-center">Dimensões</th>
+            <th class="text-center">1000</th>
+            <th class="text-center">1400</th>
+            <th class="text-center">2000</th>
+            <th class="text-center">2500</th>
+            <th class="text-center">3000</th>
+            <th class="text-center">5000</th>
+            <th class="text-center">Usr. cadastro</th>
+            <th class="text-center">Data cadastro</th>
+            <th class="text-center">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center text-muted" style="width: 80px;">1</td>
+            <td class="text-center text-muted" style="width: 80px;">TABELA - 09/2020</td>
+            <td class="text-center text-muted" style="width: 80px;">61578</td>
+            <td class="text-center" style="width: 80px;">3 LG 2 BR ( 2 ASS1,00 ) </td>
+            <td class="text-center">2,55X0,88X0,95</td>
+            <td class="text-center">3.384,00</td>
+            <td class="text-center">3.508,00</td>
+            <td class="text-center">3.601,33</td>
+            <td class="text-center">3.767,72</td>
+            <td class="text-center">3.818,67</td>
+            <td class="text-center">5.358,67</td>
+            <td class="text-center"><span class="pr-2 opacity-6"><i class="fa fa-business-time"></i></span>rodrigoF.supervisor</td>
+            <td class="text-center" style="width: 200px;">06/02/2021</td>
+            <td class="text-center">
+              <div role="" class="btn-group-sm btn-group">
+                <!--Editar-->
+                <button class="btn-shadow btn btn-info" (click)="open()">Editar</button>
+                <!--Excluir-->
+                <button class="btn-shadow btn btn-danger" (click)="excluir()">Excluir</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center text-muted" style="width: 80px;">1</td>
+            <td class="text-center text-muted" style="width: 80px;">TABELA - 09/2020</td>
+            <td class="text-center text-muted" style="width: 80px;">61581</td>
+            <td class="text-center" style="width: 80px;">1 LG 2 BR ( 2 ASS 0,90 )</td>
+            <td class="text-center">2,35X0,88X0,95</td>
+            <td class="text-center">3.158,67</td>
+            <td class="text-center">3.300,73</td>
+            <td class="text-center">3.396,00</td>
+            <td class="text-center">3.597,33</td>
+            <td class="text-center">3.709,33</td>
+            <td class="text-center">5.049,33</td>
+            <td class="text-center"><span class="pr-2 opacity-6"><i class="fa fa-business-time"></i></span>rodrigoF.supervisor</td>
+            <td class="text-center" style="width: 200px;">06/02/2021</td>
+            <td class="text-center">
+              <div role="" class="btn-group-sm btn-group">
+                <!--Editar-->
+                <button class="btn-shadow btn btn-info" (click)="open()">Editar</button>
+                <!--Excluir-->
+                <button class="btn-shadow btn btn-danger" (click)="excluir()">Excluir</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center text-muted" style="width: 80px;">1</td>
+            <td class="text-center text-muted" style="width: 80px;">TABELA - 09/2020</td>
+            <td class="text-center text-muted" style="width: 80px;">61584</td>
+            <td class="text-center" style="width: 80px;"> 1 LG 2 BR ( 2 ASS 0,80)</td>
+            <td class="text-center">2,15X0,88X0,95</td>
+            <td class="text-center">3.020,00</td>
+            <td class="text-center">3.094,67</td>
+            <td class="text-center">3.206,67</td>
+            <td class="text-center">3.298,67</td>
+            <td class="text-center">3.392,00</td>
+            <td class="text-center">4.765,33</td>
+            <td class="text-center"><span class="pr-2 opacity-6"><i class="fa fa-business-time"></i></span>rodrigoF.supervisor</td>
+            <td class="text-center" style="width: 200px;">06/02/2021</td>
+            <td class="text-center">
+              <div role="" class="btn-group-sm btn-group">
+                <!--Editar-->
+                <button class="btn-shadow btn btn-info" (click)="open()">Editar</button>
+                <!--Excluir-->
+                <button class="btn-shadow btn btn-danger" (click)="excluir()">Excluir</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </perfect-scrollbar>
+  </div>
+</div>
