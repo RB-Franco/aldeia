@@ -7,7 +7,7 @@ import { ThemeOptions } from 'src/app/theme-options';
   templateUrl: './cadastro-empresa.component.html'
 })
 export class CadastroEmpresaComponent implements OnInit {
-
+  config: any;
   closeResult: string;
 
   constructor(private modalService: NgbModal) { }

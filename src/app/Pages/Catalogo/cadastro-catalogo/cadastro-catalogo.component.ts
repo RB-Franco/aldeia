@@ -7,7 +7,7 @@ import { ThemeOptions } from 'src/app/theme-options';
   templateUrl: './cadastro-catalogo.component.html'
 })
 export class CadastroCatalogoComponent implements OnInit {
-
+  config: any;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {

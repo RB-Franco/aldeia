@@ -6,7 +6,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './cadastro-produto.component.html'
 })
 export class CadastroProdutoComponent implements OnInit {
-
+  config: any;
   closeResult: string;
 
   constructor(private modalService: NgbModal) { }
